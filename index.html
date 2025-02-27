@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./src/svg/Vector (8).svg">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <title>Wihirl</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          FontFace: {
+            FontInter: "Inter",
+            font: "Fraunces"
+          },
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="">
+    <div class="bg-[#0070A0] flex justify-center gap-5 p-5 max-[460px]:flex-col text-center">
+      <p class="font-[font] text-white  max-[768px]:text-[15px]">
+        A Webflow template for SaaS products.
+      </p>
+      <a href="#" class="text-white hover:text-red-400 max-[768px]:text-[15px]">
+        See all templates >
+      </a>
+    </div>
+    <div class="container m-auto p-7">
+      <nav class="flex items-center justify-between max-[1024px]:p-2 mb-[100px]">
+        <a href="№">
+          <img class="w-[200px] h-[100px] max-[1280px]:w-[100px]" src="./src/svg/bred-logo.svg" alt="">
+        </a>
+        <ul class="flex items-center gap-10 max-[768px]:hidden">
+          <li>
+            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px]  font-sans">
+              Features
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
+              Integrations
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
+              Learn
+            </a>
+          </li>
+        </ul>
+        <div class="flex items-center gap-10 max-[11024px]:gap-6">
+          <a href="#"
+            class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[14px] font-sans hover:scale-110 transform transition-all">
+            Sign in
+          </a>
+          <a href="#"
+            class="bg-[#0070A0] px-4 p-2 rounded-[10px] text-white text-[20px] max-[1024px]:px-3 hover:bg-transparent border max-[1023px]:text-[15px] hover:text-[#0070A0] hover:scale-110 transform transition-all ">
+            Book a demo
+          </a>
+          <div class="hidden max-[768px]:block">
+            <i class="fa fa-bars text-[25px]"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex justify-between items-center max-[768px]:flex-col max-[768px]:justify-center max-[768px]:gap-16">
+        <div>
+          <h1
+            class="text-black font-bold  text-[58px] w-[500px] mb-10 max-[1024px]:text-[30px] max-[1024px]:w-[280px] max-[768px]:w-[400px] max-[768px]:text-center">
+            Your everyday tasks, automated.
+          </h1>
+          <p
+            class="text-[#1f1f1f] text-[20px] w-[400px] mb-10 max-[1024px]:text-[16px] max-[768px]:mb-10 max-[1024px]:w-[280px] max-[768px]:w-[300px] max-[768px]:m-auto max-[768px]:text-center">
+            Whirl lets you design and streamline your everyday tasks and workflows in just a few clicks.
+          </p>
+          <div class="flex items-center gap-10 max-[768px]:justify-center">
+            <button
+              class="bg-[#0070A0] px-7 py-3 rounded-[10px] border hover:text-[#0070A0] hover:scale-105 transform transition-all text-white hover:bg-transparent hover:border ">Book
+              a demo</button>
+            <a href="#" class="font-serif text-[#0070a0] hover:scale-125 hover:text-black transform transition-all">
+              Learn more >
+            </a>
+          </div>
+        </div>
+        <div class="">
+          <img class="max-[1024px]:w-[300px] max-[768px]:w-[350px]" src="./src/img/hero.png" alt="hero-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container m-auto p-7">
+      <section>
+        <h1 class="text-center text-[40px] mt-[100px] mb-[40px] max-[1023px]:text-[30px]">Trusted by 50,000+ companies
+        </h1>
+        <div class="flex flex-wrap gap-[50px] justify-evenly mb-[200px] max-[1000px]:grid-rows-2">
+        <a href="https://chromewebstore.google.com/detail/focusfox/knbdgliejcpphfbehgoannkgphpbmncj">
+          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (7).svg" alt="cart">
+        </a>
+        <a href="https://novinteh.ru/">
+          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (6).svg" alt="cart">
+        </a>
+        <a href="https://www.optimer.com/">
+          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (8).svg" alt="cart">
+        </a>
+        <a href="https://dictionary.cambridge.org/dictionary/english/carded">
+          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (9).svg" alt="cart  ">
+        </a>
+        </div>
+      </section>
+
+      <section class="flex justify-between items-center flex-wrap gap-10 max-[768px]:justify-center">
+        <div class="bg-[#FAEA73] p-[30px] max-[1024px]:p-[20px]">
+          <img class="mb-6" src="./src/svg/chaqmoq.svg" alt="chaqmoq">
+          <h1 class="font-bold text-[25px] mb-5 max-[1024px]:text-[20px]">
+            Fast. Really fast.
+          </h1>
+          <p class="font-sans w-[300px] max-[1024px]:w-[260px]">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="bg-[#CCEFF6] p-[30px] max-[1024px]:p-[20px]">
+          <img class="mb-6" src="./src/svg/chaqmoq.svg" alt="chaqmoq">
+          <h1 class="font-bold text-[25px] mb-5 max-[1024px]:text-[20px]">
+            Fast. Really fast.
+          </h1>
+          <p class="font-sans w-[300px] max-[1024px]:w-[260px]">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <div class="bg-[#F7CEDC] p-[30px] max-[1024px]:p-[20px]">
+          <img class="mb-6" src="./src/svg/chaqmoq.svg" alt="chaqmoq">
+          <h1 class="font-bold text-[25px] mb-5 max-[1024px]:text-[20px]">
+            Fast. Really fast.
+          </h1>
+          <p class="font-sans w-[300px] max-[1024px]:w-[260px]">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
