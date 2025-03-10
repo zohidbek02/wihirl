@@ -12,6 +12,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/css/stayle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
@@ -48,40 +53,43 @@
         <a href="№">
           <img class="w-[200px] h-[100px] max-[1280px]:w-[100px]" src="./src/svg/bred-logo.svg" alt="">
         </a>
-        <ul class="flex items-center gap-10 max-[768px]:hidden">
-          <li>
-            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px]  font-sans">
-              Features
+        <div class="flex items-center gap-[80px] max-[1024px]:gap-[40px] max-[768px]:hidden">
+          <ul class="flex items-center gap-10 max-[768px]:hidden">
+            <li>
+              <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px]  font-sans">
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
+                Integrations
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
+                Learn
+              </a>
+            </li>
+          </ul>
+
+          <div class="flex items-center gap-10 max-[11024px]:gap-6">
+            <a href="#"
+              class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[14px] font-sans hover:scale-110 transform transition-all">
+              Sign in
             </a>
-          </li>
-          <li>
-            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
-              Pricing
+            <a href="#"
+              class="bg-[#0070A0] px-4 p-2 rounded-[10px] text-white text-[20px] max-[1024px]:px-3 hover:bg-transparent border max-[1023px]:text-[15px] hover:text-[#0070A0] hover:scale-110 transform transition-all ">
+              Book a demo
             </a>
-          </li>
-          <li>
-            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
-              Integrations
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[13px] font-sans">
-              Learn
-            </a>
-          </li>
-        </ul>
-        <div class="flex items-center gap-10 max-[11024px]:gap-6">
-          <a href="#"
-            class="text-[#33383f] text-[20px] hover:text-[#0070A0] max-[1024px]:text-[14px] font-sans hover:scale-110 transform transition-all">
-            Sign in
-          </a>
-          <a href="#"
-            class="bg-[#0070A0] px-4 p-2 rounded-[10px] text-white text-[20px] max-[1024px]:px-3 hover:bg-transparent border max-[1023px]:text-[15px] hover:text-[#0070A0] hover:scale-110 transform transition-all ">
-            Book a demo
-          </a>
-          <div class="hidden max-[768px]:block">
-            <i class="fa fa-bars text-[25px]"></i>
           </div>
+        </div>
+        <div class="hidden max-[768px]:block">
+          <i class="fa fa-bars text-[25px]"></i>
         </div>
       </nav>
 
@@ -97,7 +105,7 @@
           </p>
           <div class="flex items-center gap-10 max-[768px]:justify-center">
             <button
-              class="bg-[#0070A0] px-7 py-3 rounded-[10px] border hover:text-[#0070A0] hover:scale-105 transform transition-all text-white hover:bg-transparent hover:border ">Book
+              class="bg-[#0070A0] px-7 py-3 rounded-[10px] border hover:text-[#0070A0] hover:scale-105 transform transition-all text-white hover:bg-transparent hover:border cursor-pointer">Book
               a demo</button>
             <a href="#" class="font-serif text-[#0070a0] hover:scale-125 hover:text-black transform transition-all">
               Learn more >
@@ -105,7 +113,8 @@
           </div>
         </div>
         <div class="">
-          <img class="max-[1024px]:w-[300px] max-[768px]:w-[350px]" src="./src/img/hero.png" alt="hero-img">
+          <img class="max-[1024px]:w-[300px] max-[768px]:w-[350px]" src="./src/img/hero.png" alt="hero-img" width="600"
+            height="400">
         </div>
       </div>
     </div>
@@ -117,23 +126,28 @@
         <h1 class="text-center text-[40px] mt-[100px] mb-[40px] max-[1023px]:text-[30px]">Trusted by 50,000+ companies
         </h1>
         <div class="flex flex-wrap gap-[50px] justify-evenly mb-[200px] max-[1000px]:grid-rows-2">
-        <a href="https://chromewebstore.google.com/detail/focusfox/knbdgliejcpphfbehgoannkgphpbmncj">
-          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (7).svg" alt="cart">
-        </a>
-        <a href="https://novinteh.ru/">
-          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (6).svg" alt="cart">
-        </a>
-        <a href="https://www.optimer.com/">
-          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (8).svg" alt="cart">
-        </a>
-        <a href="https://dictionary.cambridge.org/dictionary/english/carded">
-          <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (9).svg" alt="cart  ">
-        </a>
+          <a href="https://chromewebstore.google.com/detail/focusfox/knbdgliejcpphfbehgoannkgphpbmncj">
+            <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (7).svg"
+              alt="cart">
+          </a>
+          <a href="https://novinteh.ru/">
+            <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (6).svg"
+              alt="cart">
+          </a>
+          <a href="https://www.optimer.com/">
+            <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (8).svg"
+              alt="cart">
+          </a>
+          <a href="https://dictionary.cambridge.org/dictionary/english/carded">
+            <img class="hover:scale-110 transform transition-all cursor-pointer" src="./src/svg/IMAGE (9).svg"
+              alt="cart  ">
+          </a>
         </div>
       </section>
 
-      <section class="flex justify-between items-center flex-wrap gap-10 max-[768px]:justify-center">
-        <div class="bg-[#FAEA73] p-[30px] max-[1024px]:p-[20px]">
+      <section class="flex justify-between items-center flex-wrap gap-10 max-[768px]:justify-center mb-[200px]">
+        <div
+          class="bg-[#f0e488] p-[30px] max-[1024px]:p-[20px] hover:scale-105 transform transition-all hover:rounded-[30px] hover:bg-[#FAEA73]">
           <img class="mb-6" src="./src/svg/chaqmoq.svg" alt="chaqmoq">
           <h1 class="font-bold text-[25px] mb-5 max-[1024px]:text-[20px]">
             Fast. Really fast.
@@ -143,7 +157,8 @@
           </p>
         </div>
 
-        <div class="bg-[#CCEFF6] p-[30px] max-[1024px]:p-[20px]">
+        <div
+          class="bg-[#ddf2f6] p-[30px] max-[1024px]:p-[20px] hover:scale-105 transform transition-all hover:rounded-[30px] hover:bg-[#CCEFF6]">
           <img class="mb-6" src="./src/svg/chaqmoq.svg" alt="chaqmoq">
           <h1 class="font-bold text-[25px] mb-5 max-[1024px]:text-[20px]">
             Fast. Really fast.
@@ -153,7 +168,8 @@
           </p>
         </div>
 
-        <div class="bg-[#F7CEDC] p-[30px] max-[1024px]:p-[20px]">
+        <div
+          class="bg-[#f9dde7] p-[30px] max-[1024px]:p-[20px] hover:scale-105 transform transition-all hover:bg-[#F7CEDC] hover:rounded-[30px]">
           <img class="mb-6" src="./src/svg/chaqmoq.svg" alt="chaqmoq">
           <h1 class="font-bold text-[25px] mb-5 max-[1024px]:text-[20px]">
             Fast. Really fast.
@@ -164,6 +180,63 @@
         </div>
       </section>
     </div>
+
+    <section class="hidden sm:block pt-[100px] pb-[100px] bg-[#F7F9FA] mb-[200px]">
+      <div class="container m-auto p-7">
+        <h2 class="text-3xl md:text-[39px] font-[Fraunces] max-w-[630px] font-normal text-center md:text-left">
+          <span class="text-4xl md:text-[42px] font-normal">We will take care of everything,</span> so you can get back
+          to
+          relaxing.
+        </h2>
+        <div class="flex justify-between mt-[40px]">
+          <div class="flex flex-col md:flex-row  gap-10 mt-10">
+            <div class="w-full md:w-auto">
+              <ul>
+                <li class="list-style">
+                  <div>
+                    <span>
+                      <i class="fas fa-hand-point-up text-[#006B99] text-[20px]"></i>
+                    </span>
+                    <p class="custom-text">Anti-loss technology</p>
+                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                  </div>
+                </li>
+                <li class="list-style">
+                  <div>
+                    <span>
+                      <i class="fas fa-smile text-[#006B99] text-[20px]"></i>
+                    </span>
+                    <p class="custom-text">Exchange easily</p>
+                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                  </div>
+                </li>
+                <li class="list-style">
+                  <div>
+                    <span>
+                      <i class="fas fa-envelope text-[#006B99] text-[20px]"></i>
+                    </span>
+                    <p class="custom-text">Anti-loss technology</p>
+                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                  </div>
+                </li>
+                <li class="list-style max-[1280px]:w-[]">
+                  <div>
+                    <span>
+                      <i class="fas fa-bolt text-[#006B99] text-[20px]"></i>
+                    </span>
+                    <p class="custom-text">Anti-loss technology</p>
+                    <i class="fa-solid fa-chevron text-gray-400"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:w-auto">
+            <img class="h-[400px] w-[550px]" src="./src/svg/IMAGE (11)-cropped.svg" alt="section-2-image">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
